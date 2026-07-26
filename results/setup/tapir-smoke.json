@@ -1,0 +1,101 @@
+{
+  "timestamp_utc": "2026-07-22T15:45:52.447851+00:00",
+  "success": true,
+  "baseline": "ICCV 2023 Standard PyTorch TAPIR (whole-video)",
+  "source": {
+    "repository": "https://github.com/google-deepmind/tapnet.git",
+    "commit": "989a1fd62f7b2a3cf7f1c339bbde38e086e3a0fc",
+    "clean": true,
+    "checkout": "external\\tapnet",
+    "imported_module": "external\\tapnet\\tapnet\\torch\\tapir_model.py",
+    "expected_repository": "https://github.com/google-deepmind/tapnet.git",
+    "expected_commit": "989a1fd62f7b2a3cf7f1c339bbde38e086e3a0fc",
+    "project_files_sha256": {
+      "baseline.py": "178063160ea7aa6435fcc968936ffc2c8d14ff7c087ca1788f18150049b07bde",
+      "synthetic.py": "fa0e86e417b8294745b9cdf4e1807c590c155520908f1ca57f2ec7c0890194c1",
+      "run_tapir_smoke.py": "638e03aae448f6a7fd003a2f6a09d5181e5e85f291c90f65fa52e8671dfa0d79"
+    }
+  },
+  "checkpoint": {
+    "url": "https://storage.googleapis.com/dm-tapnet/tapir_checkpoint_panning.pt",
+    "sha256": "628611c656b3bd65d4a70fbf5526b62afe82d1b085ce6044685287fb78509daa",
+    "size_bytes": 124348474,
+    "strict_state_dict_load": true
+  },
+  "model": {
+    "config": {
+      "bilinear_interp_with_depthwise_conv": false,
+      "pyramid_level": 0,
+      "initial_resolution": [
+        256,
+        256
+      ],
+      "extra_convs": false,
+      "softmax_temperature": 20.0,
+      "use_casual_conv": false
+    },
+    "state_key_count": 188,
+    "parameter_count": 31072327
+  },
+  "environment": {
+    "python": "3.11.9",
+    "torch": "2.13.0+cu130",
+    "torchvision": "0.28.0+cu130",
+    "cuda_runtime": "13.0",
+    "cudnn": 92000,
+    "device": "NVIDIA GeForce RTX 5060 Ti",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "precision": "float32",
+    "tf32": false
+  },
+  "input": {
+    "seed": 20260722,
+    "frame_count": 16,
+    "resolution_hw": [
+      256,
+      256
+    ],
+    "query_count": 5,
+    "query_coordinate_order": "(time, y, x)",
+    "track_coordinate_order": "(x, y)"
+  },
+  "timing": {
+    "warmup_runs": 1,
+    "warmup_seconds": [
+      0.5135402000159957
+    ],
+    "inference_after_warmup_seconds": 0.06490540003869683
+  },
+  "memory": {
+    "allocated_before_inference_bytes": 170434048,
+    "peak_allocated_bytes": 482909696,
+    "peak_reserved_bytes": 526385152,
+    "nvidia_smi_before": {
+      "driver": "610.74",
+      "device_memory_used_mib": "1937",
+      "device_utilization_percent": "3"
+    },
+    "nvidia_smi_after": {
+      "driver": "610.74",
+      "device_memory_used_mib": "2351",
+      "device_utilization_percent": "10"
+    }
+  },
+  "metrics": {
+    "epe_pixels": 0.8865934610366821,
+    "median_error_pixels": 0.8690665364265442,
+    "max_error_pixels": 1.8666143417358398,
+    "pck_3px": 1.0,
+    "pck_5px": 1.0,
+    "predicted_visible_fraction": 1.0
+  },
+  "outputs": {
+    "video": "results\\generated\\smoke\\tapir-smoke.mp4",
+    "video_sha256": "21e3cf9b629d22c8df7da3447be2e014a4e9b7263e798a16d48911335caf896e",
+    "contact_sheet": "results\\generated\\smoke\\tapir-smoke-contact-sheet.png",
+    "npz": "results\\generated\\smoke\\tapir-smoke-outputs.npz"
+  }
+}

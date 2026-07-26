@@ -1,0 +1,6 @@
+# PyTorch is installed separately from the official CUDA 13.0 wheel index.
+dm-tree==0.1.10
+einshape==1.0
+numpy==2.4.4
+opencv-python-headless==5.0.0.93
+pytest==9.1.1

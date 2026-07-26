@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools==78.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tapir-failure-analysis"
+version = "0.1.0"
+description = "Reproducible failure analysis for the ICCV 2023 TAPIR baseline."
+requires-python = "==3.11.*"
+dependencies = [
+  "dm-tree==0.1.10",
+  "einshape==1.0",
+  "numpy==2.4.4",
+  "opencv-python-headless==5.0.0.93",
+  "torch==2.13.0",
+  "torchvision==0.28.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]

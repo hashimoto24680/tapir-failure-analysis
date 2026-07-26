@@ -1,0 +1,36 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+docs/HANDOFF.md
+
+# Model weights and downloaded data
+checkpoints/
+models/
+external/
+data/raw/
+data/external/
+
+# Generated outputs
+results/generated/
+*.mp4
+*.avi
+*.mov
+*.npy
+*.npz
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
