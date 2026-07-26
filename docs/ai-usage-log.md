@@ -15,12 +15,13 @@
 - 実行結果: PyTorch 2.13.0+cu130で`sm_120` CUDA検査成功。16-frame・5-point合成clipでEPE 0.887 px、PCK@3/5px 1.0、低GPU負荷時のwarm-up後0.065秒、PyTorch peak allocated約483 MB
 - 人間が今後判断する箇所: Git commitに使う氏名・メール、failure条件の最終強度範囲、tuning/final split、レポートに採用する比較表と考察
 
-## 2026-07-23 GitHub公開準備
+## 2026-07-23〜2026-07-26 GitHub公開準備
 
 - 使用AI: OpenAI Codex
 - ユーザー方針: 本人のGitHubへ最初はprivate repositoryとして保存し、課題提出時にpublicへ変更する
 - 主な用途: commit対象の列挙、秘密情報・大容量ファイル・外部データの混入確認、公開時に不要なローカル絶対パスの除去、GitHub CLI・接続アカウントの確認
 - 除外を確認した内容: checkpoint、公式TapNet checkout、生成動画・NPZ、仮想環境、外部データ
+- 実行結果（2026-07-26）: `hashimoto24680/tapir-failure-analysis`をprivate repositoryとして作成し、監査済み23ファイルの初回commit `053f674`を`main`へpushした
 
 ## 2026-07-23 TAPIR論文の初心者向け理解支援
 
