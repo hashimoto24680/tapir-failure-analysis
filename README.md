@@ -1,6 +1,6 @@
 # TAPIR Failure Case Analysis
 
-ICCV 2023 main-track full paper **“TAPIR: Tracking Any Point with Per-Frame Initialization and Temporal Refinement”** を再現し、failure case の分析と改善を行うプロジェクトです。
+ICCV 2023 main-track full paper **“TAPIR: Tracking Any Point with Per-Frame Initialization and Temporal Refinement”** を対象に、再現、failure case の分析、改善を行うプロジェクトです。
 
 - Paper: https://openaccess.thecvf.com/content/ICCV2023/html/Doersch_TAPIR_Tracking_Any_Point_with_Per-Frame_Initialization_and_Temporal_Refinement_ICCV_2023_paper.html
 - Official repository: https://github.com/google-deepmind/tapnet
